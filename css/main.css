@@ -1,0 +1,754 @@
+@font-face {
+  font-family: "Raleway Heavy";
+  src: url("/fonts/Raleway_Heavy/Raleway-Heavy.eot") format("eot"),
+    url("/fonts/Raleway_Heavy/Raleway-Heavy.woff") format("woff"),
+    url("/fonts/Raleway_Heavy/Raleway-Heavy.ttf") format("truetype"),
+    url("/fonts/Raleway_Heavy/Raleway-Heavy.svg") format("svg");
+}
+/* вынес в определение шрифта */
+* {
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  margin: 0;
+  padding-right: 75px;
+  background-color: #abeafa;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-left: 85px;
+}
+
+.icons {
+  margin-top: 50px;
+  margin-right: -125px;
+  display: flex;
+}
+/* тут обрати внимание на вложенный селектор */
+.icons img {
+  height: 20px;
+}
+/* обрати внимание на этот стиль, тут работает псевдокласс */
+.icons img:not(:first-child) {
+  margin-left: 10px;
+}
+
+.content-site-top {
+  height: 560px;
+  background-color: #abeafa;
+  width: 100%;
+  padding-top: 200px;
+  padding-left: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 200px;
+}
+
+.yellow_block {
+  font-family: "Raleway", sans-serif;
+  width: 271px;
+  height: 300px;
+  background-color: #fff51f;
+  padding: 40px 10px 50px 20px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.yellow_block h3 {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.yellow_block p {
+  line-height: 15px;
+  margin-top: -5px;
+  margin-bottom: 0px;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.slide-content {
+  font-family: "Raleway", sans-serif;
+  width: 370px;
+  height: 230px;
+  background-color: transparent;
+  margin-top: -140px;
+  margin-right: -130px;
+}
+
+.slide-content h3 {
+  line-height: 35px;
+  font-size: 46px;
+  color: #fff51f;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.slide-content p {
+  display: inline-block;
+  font-size: 21px;
+  color: #fff51f;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 68px;
+}
+
+.slide-button {
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: normal;
+  border: 0px;
+  margin-top: -20px;
+  font-weight: 900;
+  height: 49px;
+  width: 124px;
+  background-color: #fff51f;
+}
+
+.sidebar-product {
+  font-family: "Roboto", sans-serif;
+  margin: -20px 45px 0 200px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.sidebar {
+  font-size: 14px;
+  align-content: center;
+  width: 300px;
+  background-color: transparent;
+}
+
+.menu {
+  /* убрал ширину, чтобы позиции меню не были уже, чем сама надпись */
+  /* width: 270px; */
+  margin: 0px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0px;
+  background-color: #26d2fc;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu > li > span {
+  padding: 30px;
+}
+
+.menu .submenu {
+  display: none;
+  width: 155px;
+  color: #333333;
+  background-color: #26d2fc;
+}
+
+ul li {
+  display: block;
+}
+
+.menu li:hover {
+  color: #ffffff;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.parent-submenu:hover > .submenu {
+  display: block;
+}
+
+.parent-submenu:hover {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  padding: 0px;
+  left: 100%;
+  width: 165px;
+}
+/* если before, то лучше используй контент. https://graphemica.com/ тут можешь найти код иконок для css */
+.submenu li:before {
+  content: "\0025A0";
+  padding: 0 5px;
+}
+
+.sidebar > h4 {
+  margin: 0;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 25px;
+  padding-left: 40px;
+}
+
+.annonce {
+  margin-top: 30px;
+  width: 270px;
+  height: 300px;
+  background-color: #e0e0e0;
+  text-align: start;
+}
+
+.annonce > h4 {
+  padding-top: 105px;
+  padding-left: 140px;
+  line-height: 35px;
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: italic;
+  font-size: 36px;
+  color: #333333;
+}
+
+.products {
+  margin-left: 30px;
+  flex-direction: column;
+}
+
+.products h3 {
+  font-size: 22px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.new-products {
+  width: 870px;
+  background-color: #f8f8f8;
+  color: #707070;
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+/* родительский класс, который определяет расположение элементов */
+.new-products .cards-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*  */
+
+.new-products .product {
+  height: 320px;
+  width: 270px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.new-products .product .text-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.price {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  margin-right: 25px;
+  text-align: right;
+}
+
+/*.name, .price {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+.product {
+  position: relative;
+}
+
+/* ------------- */
+/* margin сама там дальше проставляй, тут я на гляз сейчас делаю. размеры шрифта и все остальное тоже на тебе */
+.product .name {
+  width: 70%;
+  word-break: break-all;
+}
+
+.product .name,
+.text-product .price {
+  margin-top: 15px;
+}
+
+.text-product .price {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: fit-content;
+}
+
+.text-product .price p:nth-child(2n) {
+  margin: 0;
+}
+
+.triangle-new::after {
+  content: "";
+  position: absolute; /* Абсолютное позиционирование */
+  /* поскольку это квадрат, его надо смещать на его размер (бордера) */
+  right: -35px;
+  top: -35px;
+  border: 35px solid transparent; /* Прозрачные границы */
+  border-top: 35px solid red; /* Добавляем треугольник */
+  transform: rotate(225deg);
+}
+.triangle-new::before {
+  content: "NEW";
+  position: absolute; /* Абсолютное позиционирование */
+  right: 5px;
+  top: 5px;
+  /* нужно для того, чтобы отобразить выше треугольника */
+  z-index: 122;
+  font-size: 12px;
+  color: #fff;
+}
+
+.triangle-hot::after {
+  content: "";
+  position: absolute;
+  right: -35px;
+  top: -35px;
+  border: 35px solid transparent;
+  border-top: 35px solid yellow;
+  transform: rotate(225deg);
+}
+.triangle-hot::before {
+  content: "HOT";
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 122;
+  font-size: 12px;
+  color: black;
+}
+
+.product p span {
+  color: red;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.new-products img {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.top-products {
+  width: 870px;
+  background-color: #f8f8f8;
+  color: #707070;
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.top-products .cards-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-products .product {
+  height: 320px;
+  width: 270px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.top-products .product .text-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-products img {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.sale-products {
+  width: 870px;
+  background-color: #f8f8f8;
+  color: #707070;
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.sale-products .cards-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sale-products .product {
+  height: 320px;
+  width: 270px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.sale-products .product .text-product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale-products img {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.brands {
+  width: 1170px;
+  height: 160px;
+  margin-left: 160px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  align-content: center;
+}
+
+.brands img {
+  margin-top: 70px;
+  margin-left: 14px;
+}
+
+.social-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
+  background-color: #eaeaea;
+  width: 1170px;
+}
+
+.instagram {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.instagram p {
+  font-family: "Roboto";
+  font-style: italic;
+  color: black;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.instagram span {
+  font-size: 18px;
+}
+
+.instagram .icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.livello img:not(:first-child) {
+  margin-left: 8px;
+}
+
+.icon img {
+  margin-right: 10px;
+  object-fit: none;
+}
+
+.social {
+  padding-top: 50px;
+}
+
+.f-icon {
+  background-color: #3b5997;
+  width: 390px;
+  height: 150px;
+  float: left;
+}
+
+.tw-icon {
+  background-color: #3fccfd;
+  width: 390px;
+  height: 150px;
+  float: left;
+}
+
+.pin-icon {
+  background-color: #cb2027;
+  width: 390px;
+  height: 150px;
+  float: left;
+}
+
+.social img {
+  margin-top: 44px;
+  margin-left: 180px;
+}
+
+.info-block {
+  background-color: #373737;
+  width: 100%;
+  display: flex;
+  padding-left: 190px;
+  padding-right: 25px;
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+
+.menu-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-block h3 {
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+}
+
+.menu-block a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  color: white;
+  text-decoration-line: none;
+  padding-top: 5px;
+}
+
+.category {
+  width: 200px;
+}
+
+.category div {
+  display: flex;
+  flex-direction: column;
+}
+
+.account {
+  width: 200px;
+}
+
+.account div {
+  display: flex;
+  flex-direction: column;
+}
+
+.support {
+  width: 160px;
+}
+
+.support div {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter {
+  width: 255px;
+}
+
+.newsletter p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  color: white;
+}
+
+.newsletter input {
+  border: none;
+  background-color: yellow;
+  width: 180px;
+  height: 30px;
+  padding: 0;
+}
+
+input::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12px;
+  color: #333333;
+  padding-left: 20px;
+}
+
+input:-moz-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12px;
+  color: #333333;
+  padding-left: 20px;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.newsletter button {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  border: 0px;
+  height: 30px;
+  width: 70px;
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin-left: -3px;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+  padding-left: 20px;
+}
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+  width: 267px;
+  padding-top: 35px;
+}
+
+.about {
+  width: 273px;
+  padding-left: 25px;
+}
+
+.about .text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 12px;
+  color: white;
+}
+
+.about .email {
+  color: yellow;
+}
+
+.about span {
+  padding-left: 10px;
+}
+
+.about .phone {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+}
+
+.number a {
+  color: white;
+  text-decoration: none;
+}
+
+.about .mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+}
+
+.email a {
+  color: yellow;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #dad9d9;
+  font-size: 12px;
+  margin-left: 160px;
+}
+
+.copyright img {
+  margin-right: 5px;
+}
+
+.icons-foot {
+  margin-top: 10px;
+  margin-right: 25px;
+  display: flex;
+  color: white;
+}
+
+.icons-foot img {
+  margin-left: 10px;
+  object-fit: none;
+}
