@@ -4,6 +4,28 @@
     url("/fonts/Raleway_Heavy/Raleway-Heavy.woff") format("woff"),
     url("/fonts/Raleway_Heavy/Raleway-Heavy.ttf") format("truetype"),
     url("/fonts/Raleway_Heavy/Raleway-Heavy.svg") format("svg");
+
+  font-family: "FontAwesome";
+  src: url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.eot")
+      format("eot"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.svg")
+      format("svg"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.ttf")
+      format("truetype"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.woff")
+      format("woff"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.woff2")
+      format("woff2"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.eot")
+      format("eot"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.svg")
+      format("svg"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.ttf")
+      format("truetype"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.woff")
+      format("woff"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.woff2")
+      format("woff2");
 }
 /* вынес в определение шрифта */
 * {
@@ -13,6 +35,7 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   background-color: #f8f8f8;
 }
@@ -748,7 +771,49 @@ footer {
   color: white;
 }
 
-.icons-foot img {
+.icons-foot span {
   margin-left: 10px;
   object-fit: none;
+}
+
+.facebook-foot::before {
+  content: "\f39e";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.twitter-foot::before {
+  content: "\f099";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.pinterest-foot::before {
+  content: "\f231";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.googleplus-foot::before {
+  content: "\f0d5";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.tumblr-foot::before {
+  content: "\f173";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.instagram-foot::before {
+  content: "\f16d";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.rss-foot::before {
+  content: "\f09e";
+  font-family: "FontAwesome";
+  color: white;
 }
