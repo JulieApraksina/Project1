@@ -337,6 +337,16 @@ ul li {
   height: 20px;
 }
 
+.viewed-item a {
+  font-family: "Roboto";
+  font-style: normal;
+  text-decoration-line: none;
+  color: #989898;
+  font-size: 12px;
+  width: 245px;
+  height: 20px;
+}
+
 .products h6 span {
   background-color: yellow;
 }
