@@ -4,6 +4,28 @@
     url("/fonts/Raleway_Heavy/Raleway-Heavy.woff") format("woff"),
     url("/fonts/Raleway_Heavy/Raleway-Heavy.ttf") format("truetype"),
     url("/fonts/Raleway_Heavy/Raleway-Heavy.svg") format("svg");
+
+  font-family: "FontAwesome";
+  src: url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.eot")
+      format("eot"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.svg")
+      format("svg"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.ttf")
+      format("truetype"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.woff")
+      format("woff"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.woff2")
+      format("woff2"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.eot")
+      format("eot"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.svg")
+      format("svg"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.ttf")
+      format("truetype"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.woff")
+      format("woff"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.woff2")
+      format("woff2");
 }
 
 * {
@@ -13,43 +35,74 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   background-color: #f8f8f8;
 }
 
 header {
   margin: 0;
-  height: 350px;
-  padding-right: 75px;
+  height: 316px;
   background-color: #abeafa;
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
-  margin-top: 25px;
-  margin-left: 85px;
-}
-
-.icons {
-  margin-top: 50px;
-  margin-right: -125px;
+.Site {
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.icons img {
-  height: 20px;
-  margin-left: 10px;
+.Site-content {
+  flex: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper-footer {
+  padding: 45px 0px;
+}
+
+.wrapper-socials {
+  width: 1055px;
 }
 
 .container {
   width: 100%;
-  padding-left: 150px;
-  padding-right: 200px;
+}
+
+.logo {
+  margin-top: 22px;
+  margin-left: 137px;
+}
+
+.logo img {
+  width: 110px;
+}
+
+.icons {
+  margin-top: 45px;
+  display: flex;
+  margin-right: 132px;
+}
+
+.icons img {
+  height: 15px;
+}
+
+.icons a:not(:first-child) {
+  margin-left: 10px;
 }
 
 .sidebar-product {
-  margin: 0px 45px 0 200px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 90px 5px 148px;
   display: flex;
   justify-content: center;
   background-color: transparent;
@@ -59,8 +112,9 @@ header {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   align-content: center;
-  width: 300px;
+  width: 240px;
   background-color: transparent;
+  margin: 0 27px 0 2px;
 }
 
 .menu {
@@ -73,11 +127,11 @@ header {
 }
 
 .menu li {
-  padding: 10px;
+  padding: 6px 0px 9px 11px;
 }
 
 .menu > li > span {
-  padding: 30px;
+  padding: 22px;
 }
 
 .menu .submenu {
@@ -111,6 +165,7 @@ ul li {
   padding: 0px;
   left: 100%;
   width: 165px;
+  z-index: 3;
 }
 /* если before, то лучше используй контент. https://graphemica.com/ тут можешь найти код иконок для css */
 .submenu li:before {
@@ -122,21 +177,19 @@ ul li {
   margin: 0;
   background-color: #333333;
   color: #ffffff;
-  padding: 25px;
-  padding-left: 40px;
+  padding: 25px 25px 25px 35px;
 }
 
 .annonce {
-  margin-top: 1150px;
-  width: 270px;
-  height: 300px;
+  margin-top: 1033px;
+  width: 241px;
+  height: 272px;
   background-color: #e0e0e0;
   text-align: start;
 }
 
 .annonce > h4 {
-  padding-top: 105px;
-  padding-left: 140px;
+  padding: 112px 0 0 123px;
   line-height: 35px;
   font-family: "Raleway Heavy";
   font-weight: normal;
@@ -146,63 +199,80 @@ ul li {
 }
 
 .products {
-  margin-left: 30px;
   flex-direction: column;
-  margin-bottom: 20px;
 }
 
 .product-selected {
   margin: 0;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 .product-selected h6 {
-  margin: 0;
+  margin: 0 15px;
 }
 
 .viewed-product {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .item-prevue {
-  margin-right: 45px;
-  margin-top: 25px;
+  margin: 32px 6px;
+}
+
+.item-bg {
+  height: 340px;
 }
 
 .prevue {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .prevue img {
-  margin-left: 20px;
+  width: 63px;
+}
+
+.prevue img:not(:first-child) {
+  margin-left: 25px;
 }
 
 .item {
   font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: space-between;
-  width: 862px;
+}
+
+.item-description {
+  margin-left: 33px;
 }
 
 .item-description h4 {
   font-size: 24px;
   font-weight: 800;
+  margin: 34px 0;
 }
 
 .item-description .price {
   font-size: 22px;
   font-weight: 700;
+  margin: 5px 0;
 }
 
 .item-description .overview {
-  font-size: 12px;
+  font-size: 13px;
+  margin: 12px 0 6px 0;
 }
 
 .description {
   width: 447px;
   font-size: 12px;
+  margin: 0 0 2px 0;
+}
+
+.hr {
+  margin: 0 29px;
+  width: 347px;
 }
 
 .add-button {
@@ -210,22 +280,26 @@ ul li {
   font-weight: normal;
   font-style: normal;
   border: 0px;
-  height: 48px;
-  width: 130px;
+  height: 44px;
+  width: 118px;
   background-color: #fb4d01;
   color: white;
   font-size: 16px;
-  margin-left: 135px;
-  margin-top: 10px;
+  margin: 13px 111px;
 }
 
 .pr-description {
   font-family: Verdana, sans-serif;
-  font-size: 11px;
+  font-size: 10px;
   color: #808080;
   border-width: 1px;
   border-style: solid;
-  padding: 10px;
+  padding: 0 16px;
+  width: 790px;
+}
+
+.pr-description p:not(:last-child) {
+  margin: 6px 0 21px 0;
 }
 
 .text-description {
@@ -234,17 +308,15 @@ ul li {
   font-style: normal;
   font-size: 12px;
   background-color: #26d2fc;
-  height: 35px;
-  width: 160px;
+  height: 32px;
+  width: 144px;
   text-align: center;
   padding-top: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 15px;
+  margin: 0 0 0 18px;
 }
 
 .description-content {
-  margin-top: 40px;
+  margin-top: 6px;
 }
 
 .products h3 {
@@ -253,8 +325,7 @@ ul li {
   font-style: italic;
   font-weight: 800;
   font-size: 30px;
-  padding-top: 10px;
-  padding-left: 20px;
+  margin: 31px 0 21px 0;
 }
 
 .viewed-item {
@@ -271,23 +342,24 @@ ul li {
 }
 
 .like-products {
-  width: 870px;
+  width: 786px;
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
+  margin-top: 53px;
 }
 
 .like-products .cards-parent {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 5px 0 0;
 }
 
 .like-products .product {
-  height: 320px;
-  width: 270px;
+  height: 285px;
+  width: 240px;
   background-color: #ffffff;
-  margin-bottom: 20px;
+  margin: 0px 0 27px 0;
 }
 
 .like-products .product .text-product {
@@ -300,8 +372,8 @@ ul li {
   font-style: italic;
   font-weight: bold;
   color: black;
-  font-size: 14px;
-  margin-left: 20px;
+  font-size: 13px;
+  margin-left: 22px;
 }
 
 .price {
@@ -309,8 +381,8 @@ ul li {
   font-style: italic;
   font-weight: bold;
   color: black;
-  font-size: 18px;
-  margin-right: 25px;
+  font-size: 17px;
+  margin-right: 23px;
   text-align: right;
 }
 
@@ -348,38 +420,37 @@ ul li {
 }
 
 .like-products img {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px 10px 0 10px;
+  width: 243px;
 }
 
 /*.product {
   position: relative;
-}
+}*/
 
-.triangle-new::after {
+/*.triangle-new::after {
     content: "";
-    position: absolute; /* Абсолютное позиционирование */
-/* поскольку это квадрат, его надо смещать на его размер (бордера) */
-/*right: -35px;
+    position: absolute; Абсолютное позиционирование 
+    поскольку это квадрат, его надо смещать на его размер (бордера)
+    right: -35px;
     top: -35px;
-    border: 35px solid transparent; /* Прозрачные границы */
-/*border-top: 35px solid red; /* Добавляем треугольник */
-/*transform: rotate(225deg);
-}
+    border: 35px solid transparent; Прозрачные границы
+    border-top: 35px solid red; Добавляем треугольник
+    transform: rotate(225deg);
+}*/
 
-.triangle-new::before {
+/*.triangle-new::before {
     content: "NEW";
-    position: absolute; /* Абсолютное позиционирование */
-/*right: 5px;
+    position: absolute; Абсолютное позиционирование
+    right: 5px;
     top: 5px;
-    /* нужно для того, чтобы отобразить выше треугольника */
-/*z-index: 122;
+    нужно для того, чтобы отобразить выше треугольника
+    z-index: 122;
     font-size: 12px;
     color: #fff;
-}
-  
-.triangle-hot::after {
+}*/
+
+/*.triangle-hot::after {
     content: "";
     position: absolute;
     right: -35px;
@@ -390,24 +461,24 @@ ul li {
 }*/
 
 .viewed-products {
-  width: 870px;
+  width: 786px;
   background-color: #f8f8f8;
-  font-style: italic;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .viewed-products .cards-parent {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 5px 0 0;
 }
 
 .viewed-products .product {
-  height: 320px;
-  width: 270px;
+  height: 285px;
+  width: 240px;
   background-color: #ffffff;
-  margin-bottom: 20px;
+  margin: 0px 0 27px 0;
 }
 
 .viewed-products .product .text-product {
@@ -416,50 +487,55 @@ ul li {
 }
 
 .viewed-products img {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px 10px 0 10px;
+  width: 243px;
 }
 
 .social {
   padding-top: 50px;
-  margin-left: 160px;
 }
 
 .f-icon {
   background-color: #3b5997;
-  width: 390px;
-  height: 150px;
+  width: 351px;
+  height: 135px;
   float: left;
 }
 
 .tw-icon {
   background-color: #3fccfd;
-  width: 390px;
-  height: 150px;
+  width: 351px;
+  height: 135px;
   float: left;
 }
 
 .pin-icon {
   background-color: #cb2027;
-  width: 390px;
-  height: 150px;
+  width: 351px;
+  height: 135px;
   float: left;
 }
 
-.social img {
+.f-icon img {
+  margin-top: 39px;
+  margin-left: 160px;
+}
+
+.tw-icon img {
   margin-top: 44px;
-  margin-left: 180px;
+  margin-left: 145px;
+}
+
+.pin-icon img {
+  margin-top: 38px;
+  margin-left: 145px;
 }
 
 .info-block {
   background-color: #373737;
-  width: 100%;
+  width: 1055px;
+  margin: 0 auto;
   display: flex;
-  padding-left: 190px;
-  padding-right: 25px;
-  padding-top: 55px;
-  padding-bottom: 40px;
 }
 
 .menu-block {
@@ -467,7 +543,7 @@ ul li {
   justify-content: space-between;
 }
 
-.info-block h3 {
+.menu-block h3 {
   font-family: "Raleway Heavy";
   font-weight: normal;
   font-style: normal;
@@ -475,10 +551,28 @@ ul li {
   color: white;
 }
 
+.newsletter h3 {
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  padding: 0 0 0 9px;
+}
+
+.about h3 {
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  margin: 18px 0 -8px 0;
+}
+
 .menu-block a {
   font-family: "Roboto";
   font-style: normal;
-  font-size: 12px;
+  font-size: 9px;
   color: white;
   text-decoration-line: none;
   padding-top: 5px;
@@ -486,6 +580,7 @@ ul li {
 
 .category {
   width: 200px;
+  padding-left: 20px;
 }
 
 .category div {
@@ -494,7 +589,7 @@ ul li {
 }
 
 .account {
-  width: 200px;
+  width: 177px;
 }
 
 .account div {
@@ -518,16 +613,18 @@ ul li {
 .newsletter p {
   font-family: "Roboto";
   font-style: normal;
-  font-size: 12px;
+  font-size: 11px;
   color: white;
+  margin: -14px 0px 12px 8px;
 }
 
 .newsletter input {
   border: none;
   background-color: yellow;
-  width: 180px;
-  height: 30px;
+  width: 163px;
+  height: 28px;
   padding: 0;
+  margin: 0 0 0 9px;
 }
 
 input::-webkit-input-placeholder {
@@ -584,8 +681,8 @@ input:focus:-ms-input-placeholder {
   font-size: 12px;
   font-style: normal;
   border: 0px;
-  height: 30px;
-  width: 70px;
+  height: 28px;
+  width: 62px;
   background-color: black;
   color: white;
   padding: 0;
@@ -604,20 +701,25 @@ input:focus {
 .payment {
   display: flex;
   justify-content: space-between;
-  width: 267px;
-  padding-top: 35px;
+  width: 237px;
+  padding-top: 38px;
+}
+
+.payment img {
+  width: 35px;
 }
 
 .about {
   width: 273px;
-  padding-left: 25px;
+  padding: 1px 0 0 32px;
 }
 
 .about .text {
   font-family: "Roboto";
   font-style: normal;
-  font-size: 12px;
+  font-size: 11px;
   color: white;
+  margin: 10px 0 -5px 0;
 }
 
 .about .email {
@@ -633,6 +735,7 @@ input:focus {
   font-style: normal;
   font-size: 14px;
   color: white;
+  margin: 13px 0px -7px 0px;
 }
 
 .number a {
@@ -653,12 +756,17 @@ input:focus {
 
 footer {
   width: 100%;
-  display: flex;
+  background-color: #373737;
   flex-direction: column;
 }
 
-.foot {
+.foot-copyright {
+  width: 100%;
   background-color: #333333;
+}
+
+.foot {
+  width: inherit;
   display: flex;
   justify-content: space-between;
 }
@@ -667,8 +775,8 @@ footer {
   font-family: "Roboto";
   font-style: normal;
   color: #dad9d9;
-  font-size: 12px;
-  margin-left: 160px;
+  font-size: 11px;
+  margin-left: 75px;
 }
 
 .copyright img {
@@ -676,13 +784,55 @@ footer {
 }
 
 .icons-foot {
-  margin-top: 10px;
-  margin-right: 25px;
+  margin-top: 16px;
+  margin-right: 96px;
   display: flex;
   color: white;
 }
 
-.icons-foot img {
+.icons-foot span {
   margin-left: 10px;
   object-fit: none;
+}
+
+.facebook-foot::before {
+  content: "\f39e";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.twitter-foot::before {
+  content: "\f099";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.pinterest-foot::before {
+  content: "\f231";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.googleplus-foot::before {
+  content: "\f0d5";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.tumblr-foot::before {
+  content: "\f173";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.instagram-foot::before {
+  content: "\f16d";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.rss-foot::before {
+  content: "\f09e";
+  font-family: "FontAwesome";
+  color: white;
 }
