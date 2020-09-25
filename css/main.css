@@ -95,6 +95,7 @@ header {
 .wrapper-sie-top {
   padding: 0 50px 0 90px;
 }
+
 .wrapper-socials {
   flex-direction: column;
 }
@@ -186,6 +187,10 @@ header {
   font-weight: 800;
   padding: 0px;
   background-color: #26d2fc;
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 .menu li {
@@ -874,6 +879,7 @@ footer {
   font-family: "FontAwesome";
   color: white;
 }
+
 .Site {
   display: flex;
   min-height: 100vh;

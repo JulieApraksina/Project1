@@ -126,6 +126,10 @@ header {
   background-color: #26d2fc;
 }
 
+.menu a {
+  text-decoration: none;
+}
+
 .menu li {
   padding: 6px 0px 9px 11px;
 }
@@ -637,7 +641,7 @@ ul li {
   margin: 0 0 0 9px;
 }
 
-input::-webkit-input-placeholder {
+.newsletter input::-webkit-input-placeholder {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 12px;
@@ -645,7 +649,7 @@ input::-webkit-input-placeholder {
   padding-left: 20px;
 }
 
-input:-moz-placeholder {
+.newsletter input:-moz-placeholder {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 12px;

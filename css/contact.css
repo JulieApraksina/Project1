@@ -1,0 +1,741 @@
+@font-face {
+  font-family: "Raleway Heavy";
+  src: url("/fonts/Raleway_Heavy/Raleway-Heavy.eot") format("eot"),
+    url("/fonts/Raleway_Heavy/Raleway-Heavy.woff") format("woff"),
+    url("/fonts/Raleway_Heavy/Raleway-Heavy.ttf") format("truetype"),
+    url("/fonts/Raleway_Heavy/Raleway-Heavy.svg") format("svg");
+
+  font-family: "FontAwesome";
+  src: url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.eot")
+      format("eot"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.svg")
+      format("svg"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.ttf")
+      format("truetype"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.woff")
+      format("woff"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-brands-400.woff2")
+      format("woff2"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.eot")
+      format("eot"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.svg")
+      format("svg"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.ttf")
+      format("truetype"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.woff")
+      format("woff"),
+    url("/fonts/fontawesome-free-5.14.0-web/webfonts/fa-solid-900.woff2")
+      format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #f8f8f8;
+  /* max-width: 1400px; */
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  margin: 0;
+  /* background-color: #abeafa; */
+  background-image: url(/contact-img/maps.png);
+  display: flex;
+  justify-content: space-between;
+  height: 316px;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.container {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #373737;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper-footer {
+  padding: 45px 0px;
+}
+
+.wrapper-brands {
+  padding: 57px 0px;
+  width: 725px;
+}
+
+.wrapper-socials {
+  width: 1055px;
+}
+
+.container {
+  width: 100%;
+}
+
+.logo {
+  margin-top: 25px;
+  margin-left: 135px;
+}
+
+.logo img {
+  width: 110px;
+}
+
+.icons {
+  background-image: url(/contact-img/bg.png);
+  width: 179px;
+  height: 29px;
+  margin-top: 37px;
+  display: flex;
+  margin-right: 81px;
+  align-items: center;
+}
+
+.icons img {
+  height: 15px;
+}
+
+.icons a:not(:first-child) {
+  margin: 0px 5px;
+}
+
+.social {
+  padding-top: 50px;
+}
+
+.f-icon {
+  background-color: #3b5997;
+  width: 351px;
+  height: 135px;
+  float: left;
+}
+
+.tw-icon {
+  background-color: #3fccfd;
+  width: 351px;
+  height: 135px;
+  float: left;
+}
+
+.pin-icon {
+  background-color: #cb2027;
+  width: 351px;
+  height: 135px;
+  float: left;
+}
+
+.f-icon img {
+  margin-top: 39px;
+  margin-left: 160px;
+}
+
+.tw-icon img {
+  margin-top: 44px;
+  margin-left: 145px;
+}
+
+.pin-icon img {
+  margin-top: 38px;
+  margin-left: 145px;
+}
+
+.info-block {
+  background-color: #373737;
+  width: 1055px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-block h3 {
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+}
+
+.newsletter h3 {
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  padding: 0 0 0 9px;
+}
+
+.about h3 {
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+  margin: 18px 0 -8px 0;
+}
+
+.menu-block a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 9px;
+  color: white;
+  text-decoration-line: none;
+  padding-top: 5px;
+}
+
+.category {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.category div {
+  display: flex;
+  flex-direction: column;
+}
+
+.account {
+  width: 177px;
+}
+
+.account div {
+  display: flex;
+  flex-direction: column;
+}
+
+.support {
+  width: 160px;
+}
+
+.support div {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter {
+  width: 255px;
+}
+
+.newsletter p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 11px;
+  color: white;
+  margin: -14px 0px 12px 8px;
+}
+
+.newsletter input {
+  border: none;
+  background-color: yellow;
+  width: 163px;
+  height: 28px;
+  padding: 0;
+  margin: 0 0 0 9px;
+}
+
+.newsletter input::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12px;
+  color: #333333;
+  padding-left: 20px;
+}
+
+.newsletter input:-moz-placeholder {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 12px;
+  color: #333333;
+  padding-left: 20px;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.newsletter button {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  border: 0px;
+  height: 28px;
+  width: 62px;
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin-left: -3px;
+}
+
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+  padding-left: 20px;
+}
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+  width: 237px;
+  padding-top: 38px;
+}
+
+.payment img {
+  width: 35px;
+}
+
+.about {
+  width: 273px;
+  padding: 1px 0 0 32px;
+}
+
+.about .text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 11px;
+  color: white;
+  margin: 10px 0 -5px 0;
+}
+
+.about .email {
+  color: yellow;
+}
+
+.about span {
+  padding-left: 10px;
+}
+
+.about .phone {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+  margin: 13px 0px -7px 0px;
+}
+
+.number a {
+  color: white;
+  text-decoration: none;
+}
+
+.about .mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+}
+
+.email a {
+  color: yellow;
+}
+
+.foot-copyright {
+  width: 100%;
+  background-color: #333333;
+}
+
+.foot {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #dad9d9;
+  font-size: 11px;
+  margin-left: 75px;
+}
+
+.copyright img {
+  margin-right: 5px;
+}
+
+.icons-foot {
+  margin-top: 16px;
+  margin-right: 96px;
+  display: flex;
+  color: white;
+}
+
+.icons-foot span {
+  margin-left: 10px;
+  object-fit: none;
+}
+
+.facebook-foot::before {
+  content: "\f39e";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.twitter-foot::before {
+  content: "\f099";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.pinterest-foot::before {
+  content: "\f231";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.googleplus-foot::before {
+  content: "\f0d5";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.tumblr-foot::before {
+  content: "\f173";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.instagram-foot::before {
+  content: "\f16d";
+  font-family: "FontAwesome";
+  color: white;
+}
+
+.rss-foot {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.sidebar-contact {
+  font-family: "Roboto", sans-serif;
+  margin: 0 129px 0 98px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.sidebar {
+  font-size: 14px;
+  align-content: center;
+  width: 230px;
+  background-color: transparent;
+  margin: 0 52px 0 0;
+}
+
+.menu {
+  margin: 0px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 0px;
+  background-color: #26d2fc;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu li {
+  padding: 6px 0px 9px 11px;
+}
+
+.menu > li > span {
+  padding: 22px;
+}
+
+.menu .submenu {
+  display: none;
+  width: 155px;
+  color: #333333;
+  background-color: #26d2fc;
+}
+
+ul li {
+  display: block;
+}
+
+.menu li:hover {
+  color: #ffffff;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.parent-submenu:hover > .submenu {
+  display: block;
+}
+
+.parent-submenu:hover {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  padding: 0px;
+  left: 100%;
+  width: 165px;
+  z-index: 3;
+}
+/* если before, то лучше используй контент. https://graphemica.com/ тут можешь найти код иконок для css */
+.submenu li:before {
+  content: "\0025A0";
+  padding: 0 5px;
+}
+
+.sidebar > h4 {
+  margin: 0;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 25px 25px 25px 35px;
+}
+
+.annonce {
+  margin: 53px 0px 0 -8px;
+  width: 240px;
+  height: 272px;
+  background-color: #e0e0e0;
+  text-align: start;
+}
+
+.annonce > h4 {
+  padding: 111px 0px 0px 125px;
+  line-height: 35px;
+  font-family: "Raleway Heavy";
+  font-weight: normal;
+  font-style: italic;
+  font-size: 30px;
+  color: #333333;
+}
+
+.contact h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #989898;
+  font-size: 12px;
+  width: 245px;
+  height: 20px;
+  margin: 14px 0;
+}
+
+.contact a {
+  font-family: "Roboto";
+  font-style: normal;
+  text-decoration-line: none;
+  color: #989898;
+  font-size: 12px;
+  width: 245px;
+  height: 20px;
+}
+
+.contact h6 span {
+  background-color: yellow;
+}
+
+.contact-form {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #333333;
+  font-size: 12px;
+  width: 655px;
+}
+
+.contact-form p {
+  margin-bottom: 5px;
+}
+
+.contact {
+  display: flex;
+  width: 722px;
+  flex-direction: column;
+}
+
+.contact-adress {
+  display: flex;
+  margin: 44px 0px 0 -8px;
+}
+
+.contact-form input {
+  border: solid;
+  border-width: thin;
+  border-color: #989898;
+  background-color: white;
+  width: 311px;
+  height: 26px;
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+
+.contact-form textarea {
+  border: solid;
+  border-width: thin;
+  border-color: #989898;
+  background-color: white;
+  width: 311px;
+  height: 134px;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #aaaaaa;
+  padding-left: 20px;
+}
+
+.contact-form input:-moz-placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #aaaaaa;
+  padding-left: 20px;
+}
+
+.brands {
+  width: 783px;
+  height: 150px;
+  margin: -3px -19px;
+  background-color: #ffffff;
+  align-content: center;
+}
+
+.brands img {
+  margin: 63px 72px;
+  width: 638px;
+}
+
+.adress {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+}
+
+.adress-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.adress-info h3 {
+  font-weight: 800;
+  font-size: 17px;
+  margin: 19px 21px;
+}
+
+.map-marker {
+  margin: -7px 0 0 20px;
+}
+
+.map-marker p {
+  font-style: normal;
+  font-size: 12px;
+  color: #777777;
+  margin: -27px 0 0 24px;
+  width: 155px;
+}
+
+.map-marker img {
+  width: 15px;
+}
+
+.phone-alt {
+  margin: 7px 0 0 30px;
+}
+
+.phone-alt a {
+  font-style: normal;
+  font-size: 17px;
+  color: #333333;
+  margin: 0 0 0 9px;
+}
+
+.phone-alt img {
+  width: 13px;
+}
+
+.map-info {
+  font-style: normal;
+  font-size: 12px;
+  color: #777777;
+  margin: 4px 0 9px 23px;
+  width: 167px;
+}
+
+.info {
+  font-style: normal;
+  font-size: 14px;
+  color: #333333;
+  margin: 0px 80px 205px 29px;
+  width: 287px;
+}
+
+.envelope {
+  margin: 7px 0 0 30px;
+}
+
+.envelope a {
+  font-style: normal;
+  font-size: 14px;
+  color: #333333;
+  margin: 0 0 0 9px;
+  text-decoration: underline;
+}
+
+.envelope img {
+  width: 13px;
+}
+
+.sep {
+  height: 300px;
+  margin-top: 73px;
+}
