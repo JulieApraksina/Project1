@@ -1,6 +1,6 @@
 .container {
   height: 316px;
-  background-image: url(/contact-img/maps.png);
+  /*background-image: url(/contact-img/maps.png);*/
 }
 
 .wrapper-footer {
@@ -14,6 +14,11 @@
 
 .wrapper-socials {
   width: 1055px;
+}
+
+.wrapper-head {
+  z-index: 1;
+  margin-left: -1272px;
 }
 
 .icons-c {
