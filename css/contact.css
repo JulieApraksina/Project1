@@ -134,7 +134,7 @@
 
 .contact {
   display: flex;
-  width: 722px;
+  /*width: 722px;*/
   flex-direction: column;
 }
 
