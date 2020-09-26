@@ -191,6 +191,10 @@ header {
 
 .menu a {
   text-decoration: none;
+  color: #333333;
+}
+.menu li:hover > span  a {
+  color: #ffffff;
 }
 
 .menu li {
