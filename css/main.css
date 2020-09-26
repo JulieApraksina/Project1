@@ -67,7 +67,7 @@ header {
   height: 15px;
 }
 /* обрати внимание на этот стиль, тут работает псевдокласс */
-.icons a:not(:first-child) {
+.icons > a:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -81,8 +81,6 @@ header {
 
 .container {
   width: 100%;
-  /* padding-left: 150px;
-  padding-right: 200px; */
 }
 
 .wrapper {
@@ -179,8 +177,6 @@ header {
 }
 
 .menu {
-  /* убрал ширину, чтобы позиции меню не были уже, чем сама надпись */
-  /* width: 270px; */
   margin: 0px;
   list-style: none;
   font-size: 14px;
@@ -193,6 +189,7 @@ header {
   text-decoration: none;
   color: #333333;
 }
+
 .menu li:hover > span  a {
   color: #ffffff;
 }
@@ -674,7 +671,7 @@ ul li {
   margin: 0 0 0 9px;
 }
 
-input::-webkit-input-placeholder {
+.newsletter input::-webkit-input-placeholder {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 12px;
@@ -682,7 +679,7 @@ input::-webkit-input-placeholder {
   padding-left: 20px;
 }
 
-input:-moz-placeholder {
+.newsletter input:-moz-placeholder {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 12px;
@@ -878,10 +875,9 @@ footer {
   color: white;
 }
 
-.rss-foot::before {
-  content: "\f09e";
-  font-family: "FontAwesome";
-  color: white;
+.rss-foot {
+  width: 15px;
+  margin-left: 10px;
 }
 
 .Site {
