@@ -57,7 +57,7 @@
 
 .sidebar-contact {
   font-family: "Roboto", sans-serif;
-  margin: 0 129px 0 98px;
+  /* margin: 0 129px 0 98px; */
   display: flex;
   justify-content: center;
   background-color: transparent;
@@ -125,7 +125,7 @@
   font-style: normal;
   color: #333333;
   font-size: 12px;
-  width: 655px;
+  /* width: 655px; */
 }
 
 .contact-form p {
