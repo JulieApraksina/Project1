@@ -68,7 +68,7 @@
   align-content: center;
   width: 230px;
   background-color: transparent;
-  margin: 0 52px 0 0;
+  margin: 0 72px 0 0;
 }
 
 .sidebar-c > h4 {
@@ -125,7 +125,7 @@
   font-style: normal;
   color: #333333;
   font-size: 12px;
-  /* width: 655px; */
+  /*width: 365px;*/
 }
 
 .contact-form p {
@@ -140,7 +140,7 @@
 
 .contact-adress {
   display: flex;
-  margin: 44px 0px 0 -8px;
+  margin: 44px 25px 0 -33px;
 }
 
 .contact-form input {
@@ -200,7 +200,7 @@
 .brands-c {
   width: 783px;
   height: 150px;
-  margin: -3px -19px;
+  margin: -4px -43px;
   background-color: #ffffff;
   align-content: center;
 }
@@ -293,4 +293,5 @@
 .sep {
   height: 300px;
   margin-top: 73px;
+  margin-left: 20px;
 }
