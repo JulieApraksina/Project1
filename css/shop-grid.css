@@ -101,8 +101,9 @@ footer {
 .icons img {
   height: 15px;
 }
-
-.icons a:not(:first-child) {
+/* со сменой языка все ломает этот стил, так как шел рекурсивно и ниже.
+ Ты добавила все в блок иконок. Делаем его только для прямых наследников и все ок */
+.icons > a:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -145,6 +146,7 @@ footer {
   color: white;
   text-decoration: none;
   display: block;
+  margin-left: 15px;
 }
 
 .dropdown-content a:hover {
